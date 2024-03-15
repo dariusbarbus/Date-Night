@@ -1,0 +1,155 @@
+/*FILE: stylesheet.css*/
+/*PROJECT: Date Night*/
+/*PROGRAMMER: Dario Simpson*/
+/*FIRST VERSION: 15-3-2024*/
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+
+/*SEPARATOR BEACUSE OF THE FLOATING NAVBAR*/
+.black-rectangle {
+    background-color: #000;
+    height: 60px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #17202d;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-nav li a {
+    padding: 5px 10px;
+}
+
+.navbar-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*drop down menu*/
+select {
+    background-color: #DDE6ED;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    outline: none;
+}
+
+.form-column {
+    width: 500px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+/*backround second section*/
+.form-column-background{
+    width: 100vw;
+    padding-top: 30px;
+    background-color: #2b3c4b;
+    margin: 0;
+}
+
+.form-column form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*text form*/
+.form-column form input[type="text"] {
+    width: 70%;
+    background-color: #a7c0d0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+/*button*/
+.form-column form button {
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #333333;
+    color: #CCCCCC;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.form-column form button:hover {
+    background-color: #4A90E2;
+    color: #333333;
+}
+
+.movies-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movies-table th,
+.movies-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.movies-table th {
+    background-color: #f2f2f2;
+}
+
+.movies-table th:last-child,
+.movies-table td:last-child {
+    text-align: center;
+}
+
+.movies-table th:nth-child(2),
+.movies-table th:nth-child(3),
+.movies-table td:nth-child(2),
+.movies-table td:nth-child(3) {
+    width: 20%;
+}
+
+.navbar{
+    padding-left: 20px;
+}
+
+
+
+

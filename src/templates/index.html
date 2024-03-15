@@ -1,0 +1,106 @@
+<!--FILE: index.html-->
+<!--PROJECT: Date Night-->
+<!--PROGRAMMER: Dario Simpson-->
+<!--FIRST VERSION: 15-3-2024-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Date Night</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <link rel="bootstrap" href="../static/css/bootstrap.min.css">
+    <script src="../static/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation-->
+<!-- Navbar -->
+<div class="navbar-container">
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="/">
+            <!-- LOGO GOES HERE -->
+            <!-- <img
+                id="MDB-logo"
+                src="https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png"
+                alt="MDB Logo"
+                draggable="false"
+                height="30"
+            /> -->
+        </a>
+        <i class="fas fa-bars"></i>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="/config"><i class="fas fa-plus-circle pe-2"></i>Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="/about"><i class="fas fa-bell pe-2"></i>About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--    separator background-->
+<div class="black-rectangle"></div>
+
+
+
+<!--    add movie or tv show-->
+<div class="form-column-background">
+        <div class="form-column">
+            <form action="/add" method="post">
+                <input type="text" name="name" placeholder="Enter movie name">
+                <select name="status">
+                    <option value="Planning">Planning</option>
+                    <option value="Watched">Watched</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+<!--add movie or tv show-->
+
+<!--        table-->
+<!--        <div class="movies-table-container">-->
+<!--            <table class="movies-table">-->
+<!--                <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Movie Name</th>-->
+<!--                        <th>Status</th>-->
+<!--                        <th>{{ user_a }}</th>-->
+<!--                        <th>{{ user_b }}</th>-->
+<!--                        <th>Remove</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                    {% for movie in movies %}-->
+<!--                    <tr>-->
+<!--                        <td>{{ movie.name }}</td>-->
+<!--                        <td>-->
+<!--                            <select name="status" onchange="changeStatus('{{ movie.name }}', this.value)">-->
+<!--                                <option value="Planning" {% if movie.status == 'Planning' %} selected {% endif %}>Planning</option>-->
+<!--                                <option value="Watched" {% if movie.status == 'Watched' %} selected {% endif %}>Watched</option>-->
+<!--                            </select>-->
+<!--                        </td>-->
+<!--                        <td><input type="checkbox" {% if movie.user_a %} checked {% endif %} onchange="updateUser('{{ movie.name }}', 'user_a', this.checked)"></td>-->
+<!--                        <td><input type="checkbox" {% if movie.user_b %} checked {% endif %} onchange="updateUser('{{ movie.name }}', 'user_b', this.checked)"></td>-->
+<!--                        <td><button onclick="removeMovie('{{ movie.name }}')">Remove</button></td>-->
+<!--                    </tr>-->
+<!--                    {% endfor %}-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--        </div>-->
+
+</body>
+</html>
