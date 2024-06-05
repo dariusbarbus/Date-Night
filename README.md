@@ -1,3 +1,1 @@
-# 🚧THIS WIKI IS STILL UNDER CONSTRUCTION🚧
-
-portable docker web application for choosing movies with your partner
+portable docker web application for choosing movies with your partner. Currently being ported as a web service.
